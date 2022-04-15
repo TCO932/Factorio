@@ -1,0 +1,33 @@
+{
+    "assembling_machine" : {
+        "1": 0.5,
+        "2": 0.75,
+        "3": 1.25
+    },
+    "furnace" : {
+        "stone": 1,
+        "steel": 2,
+        "electric": 2
+    },
+    "drill": {
+        "burner": 0.25,
+        "electric": 0.5
+    },
+    "module": {
+        "speed": {
+            "1": 0.2,
+            "2": 0.3,
+            "3": 0.5
+        },
+        "efficiency": {
+            "1": 0.3,
+            "2": 0.4,
+            "3": 0.5
+        },
+        "productivity": {
+            "1": 0.04,
+            "2": 0.06,
+            "3": 0.1
+        }
+    }
+}
