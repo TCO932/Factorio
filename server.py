@@ -13,7 +13,7 @@ def home():
 def getRec():
     recipes = getRecipes()
     
-    html = '<table><tr>Item<td></td>Amount</tr>'
+    html = '<table><tr><td>Item</td><td>Amount</td></tr>'
     for key, val in recipes.items():
         html += f'<tr><td>{key}</td><td>{val}</td></tr>'
     html += '</table>'
@@ -25,7 +25,7 @@ def getRes():
     if (item_name is None): return "Item Name is undefined"
     resources = getResources(item_name)
     
-    html = '<table><tr>Item<td></td>Amount</tr>'
+    html = '<table><tr><td>Item</td><td>Amount</td></tr>'
     for key, val in resources.items():
         html += f'<tr><td>{key}</td><td>{val}</td></tr>'
     html += '</table>'
@@ -37,7 +37,7 @@ def getFac():
     if (item_name is None): return "Item Name is undefined"
     factories = getFactoryCount(item_name)
     
-    html = '<table><tr>Item<td></td>Assembling machine amount</tr>'
+    html = '<table><tr><td>Item</td><td>Assembling machine amount</td></tr>'
     for key, val in factories.items():
         html += f'<tr><td>{key}</td><td>{val}</td></tr>'
     html += '</table>'
