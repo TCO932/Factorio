@@ -1,112 +1,108 @@
 {
-"coal" : {"elementary": true},
-"iron_ore" : {"elementary": true},
-"copper_ore" : {"elementary": true},
-"stone" : {"elementary": true},
-"uranium_ore" : {"elementary": true},
-"iron_plate" : {"elementary": true},
-"copper_plate" : {"elementary": true},
-"sulfur" : {"elementary": true},
-"plastic" : {"elementary": true},
-"steel" : {"elementary": true},
-"stonebrick" : {"elementary": true},
-"sulfuric_acid" : {"elementary": true},
-"lubricant" : {"elementary": true},
+"coal" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"iron-ore" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"copper-ore" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"stone" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"uranium-ore" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"iron-plate" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"copper-plate" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"sulfur" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"plastic-bar" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"steel-plate" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"stone-brick" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"sulfuric-acid" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
+"lubricant" : {"elementary": true, "production_time" : 0, "quantity" : 0, "recipe" : {}},
 
-"copper_wire" : {"elementary": false, "production_time": 0.5, "quantity": 2, "recipe": 
-    {"copper_plate": 1}
+"copper-cable" : {"elementary": false, "production_time": 0.5, "quantity": 2, "recipe": 
+    {"copper-plate": 1}
 },
-"circuit" : {"elementary": false, "production_time": 0.5, "quantity": 1, "recipe": 
-    {"iron_plate": 1, "copper_wire": 3}
+"electronic-circuit" : {"elementary": false, "production_time": 0.5, "quantity": 1, "recipe": 
+    {"iron-plate": 1, "copper-cable": 3}
 },
-"gear" : {"elementary": false, "production_time": 0.5, "quantity": 1, "recipe": 
-    {"iron_plate": 2}
+"iron-gear-wheel" : {"elementary": false, "production_time": 0.5, "quantity": 1, "recipe": 
+    {"iron-plate": 2}
 },
-"yellow_conveyor" : {"elementary": false, "production_time": 0.5, "quantity": 2, "recipe": 
-    {"iron_plate": 1, "gear": 1}
+"transport-belt" : {"elementary": false, "production_time": 0.5, "quantity": 2, "recipe": 
+    {"iron-plate": 1, "iron-gear-wheel": 1}
 },
-"yellow_manipulator" : {"elementary": false, "production_time": 0.5, "quantity": 1, "recipe": 
-    {"iron_plate": 1, "gear": 1, "circuit": 1}
+"inserter" : {"elementary": false, "production_time": 0.5, "quantity": 1, "recipe": 
+    {"iron-plate": 1, "iron-gear-wheel": 1, "electronic-circuit": 1}
 },
 
-"red_science" : {"elementary": false, "production_time": 5, "quantity": 1, "recipe": 
-    {"copper_plate": 1, "gear": 1}
+"automation-science-pack" : {"elementary": false, "production_time": 5, "quantity": 1, "recipe": 
+    {"copper-plate": 1, "iron-gear-wheel": 1}
 },
-"green_science" : {"elementary": false, "production_time": 6, "quantity": 1, "recipe": 
-    {"yellow_conveyor": 1, "yellow_manipulator": 1}
+"logistic-science-pack" : {"elementary": false, "production_time": 6, "quantity": 1, "recipe": 
+    {"transport-belt": 1, "inserter": 1}
 },
-"blue_science" : {"elementary": false, "production_time": 24, "quantity": 2, "recipe": 
-    {"sulfur": 1, "advanced_circuit": 3, "engine": 2}
+"chemical-science-pack" : {"elementary": false, "production_time": 24, "quantity": 2, "recipe": 
+    {"sulfur": 1, "advanced-circuit": 3, "engine-unit": 2}
 },
-"war_science" : {"elementary": false, "production_time": 10, "quantity": 2, "recipe": 
-    {"wall": 2, "heavy_magazine": 1, "grenade": 1}
+"military-science-pack" : {"elementary": false, "production_time": 10, "quantity": 2, "recipe": 
+    {"stone-brick": 2, "piercing-rounds-magazine": 1, "grenade": 1}
 },
-"purple_science" : {"elementary": false, "production_time": 21, "quantity": 3, "recipe": 
-    {"rails": 30, "electric_furnace": 1, "productivity_module1": 1}
+"production-science-pack" : {"elementary": false, "production_time": 21, "quantity": 3, "recipe": 
+    {"rail": 30, "electric-furnace": 1, "productivity-module": 1}
 },
-"yellow_science" : {"elementary": false, "production_time": 21, "quantity": 3, "recipe": 
-    {"processor": 2, "drone_frame": 1, "low_density_structure": 3}
+"utility-science-pack" : {"elementary": false, "production_time": 21, "quantity": 3, "recipe": 
+    {"processing-unit": 2, "flying-robot-frame": 1, "low-density-structure": 3}
 },
 
 
 "pipe" : {"elementary": false, "production_time": 0.5, "quantity": 1, "recipe": 
-    {"iron_plate": 1}
+    {"iron-plate": 1}
 },
-"advanced_circuit" : {"elementary": false, "production_time": 6, "quantity": 1, "recipe": 
-    {"circuit": 2, "copper_wire": 4, "plastic": 2}
+"advanced-circuit" : {"elementary": false, "production_time": 6, "quantity": 1, "recipe": 
+    {"electronic-circuit": 2, "copper-cable": 4, "plastic-bar": 2}
 },
-"engine" : {"elementary": false, "production_time": 10, "quantity": 1, "recipe": 
-    {"gear": 1, "steel": 1, "pipe": 2}
+"engine-unit" : {"elementary": false, "production_time": 10, "quantity": 1, "recipe": 
+    {"iron-gear-wheel": 1, "steel-plate": 1, "pipe": 2}
 },
-"light_magazine" : {"elementary": false, "production_time": 1, "quantity": 1, "recipe": 
-    {"iron_plate": 1}
+"firearm-magazine" : {"elementary": false, "production_time": 1, "quantity": 1, "recipe": 
+    {"iron-plate": 4}
 },
-"heavy_magazine" : {"elementary": false, "production_time": 3, "quantity": 1, "recipe": 
-    {"light_magazine": 1, "copper_plate": 5, "steel": 1}
+"piercing-rounds-magazine" : {"elementary": false, "production_time": 3, "quantity": 1, "recipe": 
+    {"firearm-magazine": 1, "copper-plate": 5, "steel-plate": 1}
 },
 "grenade" : {"elementary": false, "production_time": 8, "quantity": 1, "recipe": 
-    {"coal": 10, "iron_plate": 5}
+    {"coal": 10, "iron-plate": 5}
 },
 "wall" : {"elementary": false, "production_time": 0.5, "quantity": 1, "recipe": 
-    {"stonebrick": 5}
+    {"stone-brick": 5}
 },
 
-"productivity_module1" : {"elementary": false, "production_time": 15, "quantity": 1, "recipe": 
-    {"circuit": 5, "advanced_circuit": 5}
+"productivity-module" : {"elementary": false, "production_time": 15, "quantity": 1, "recipe": 
+    {"electronic-circuit": 5, "advanced-circuit": 5}
 },
-"efficiency_module1" : {"elementary": false, "production_time": 15, "quantity": 1, "recipe": 
-    {"circuit": 5, "advanced_circuit": 5}
+"effectivity-module" : {"elementary": false, "production_time": 15, "quantity": 1, "recipe": 
+    {"electronic-circuit": 5, "advanced-circuit": 5}
 },
-"speed_module1" : {"elementary": false, "production_time": 15, "quantity": 1, "recipe": 
-    {"circuit": 5, "advanced_circuit": 5}
+"speed-module" : {"elementary": false, "production_time": 15, "quantity": 1, "recipe": 
+    {"electronic-circuit": 5, "advanced-circuit": 5}
 },
 
-"iron_rod" : {"elementary": false, "production_time": 0.5, "quantity": 2, "recipe": 
-    {"iron_plate": 1}
+"iron-stick" : {"elementary": false, "production_time": 0.5, "quantity": 2, "recipe": 
+    {"iron-plate": 1}
 },
-"rails" : {"elementary": false, "production_time": 0.5, "quantity": 2, "recipe": 
-    {"stone": 1, "steel": 1, "iron_rod": 1}
+"rail" : {"elementary": false, "production_time": 0.5, "quantity": 2, "recipe": 
+    {"stone": 1, "steel-plate": 1, "iron-stick": 1}
 },
-"electric_furnace" : {"elementary": false, "production_time": 5, "quantity": 1, "recipe": 
-    {"steel": 10, "advanced_circuit": 5, "stonebrick": 10}
+"electric-furnace" : {"elementary": false, "production_time": 5, "quantity": 1, "recipe": 
+    {"steel-plate": 10, "advanced-circuit": 5, "stone-brick": 10}
 },
-"processor" : {"elementary": false, "production_time": 10, "quantity": 1, "recipe": 
-    {"circuit": 20, "advanced_circuit": 2, "sulfuric_acid": 5}
+"processing-unit" : {"elementary": false, "production_time": 10, "quantity": 1, "recipe": 
+    {"electronic-circuit": 20, "advanced-circuit": 2, "sulfuric-acid": 5}
 },
-"low_density_structure" : {"elementary": false, "production_time": 20, "quantity": 1, "recipe": 
-    {"copper_plate": 20, "steel": 2, "plastic": 5}
+"low-density-structure" : {"elementary": false, "production_time": 20, "quantity": 1, "recipe": 
+    {"copper-plate": 20, "steel-plate": 2, "plastic-bar": 5}
 },
-"electric_engine" : {"elementary": false, "production_time": 10, "quantity": 1, "recipe": 
-    {"circuit": 2, "engine": 1, "lubricant": 15}
+"electric-engine-unit" : {"elementary": false, "production_time": 10, "quantity": 1, "recipe": 
+    {"electronic-circuit": 2, "engine-unit": 1, "lubricant": 15}
 },
 "battery" : {"elementary": false, "production_time": 4, "quantity": 1, "recipe": 
-    {"iron_plate": 1, "copper_plate": 1, "sulfuric_acid": 20}
+    {"iron-plate": 1, "copper-plate": 1, "sulfuric-acid": 20}
 },
-"drone_frame" : {"elementary": false, "production_time": 20, "quantity": 1, "recipe": 
-    {"steel": 1, "battery": 2, "circuit": 3, "electric_engine": 1}
+"flying-robot-frame" : {"elementary": false, "production_time": 20, "quantity": 1, "recipe": 
+    {"steel-plate": 1, "battery": 2, "electronic-circuit": 3, "electric-engine-unit": 1}
 }
-
-
-
-
 }
