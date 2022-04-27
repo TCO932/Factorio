@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template_string
 from threading import Thread
-from factorio import getResources, getFactoryCount, getRecipes, getDetailedcraft
+from factorio import getResources, getFactoryCount, getRecipes, getDetailedcraft, getAssemlingMachines
 # http://10.1.1.1:5000/login?username=alex&password=pw1
 
 app = Flask('')
@@ -12,6 +12,10 @@ def home():
 @app.route('/recipes')
 def getRec():
     return getRecipes()
+
+@app.route('/assemblingMachines')
+def assemlingMachines():
+    return getAssemlingMachines()
 
 @app.route('/resources')
 def getRes():
