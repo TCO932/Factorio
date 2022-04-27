@@ -90,6 +90,9 @@ def getDetailedcraft(item_name, speed, assembling_machine, productivity = False)
             item: speed * (amount if productivity == False else amount / (1 + asm_mach["slots"] * speeds["modules"]["productivity-module-3"]["productivity"]))
         })
     return craft
+
+def getAssemlingMachines():
+    return speeds["assembling-machines"]
 # item = "war_science"
 # science = dict(getResources(item))
 # pprint(science)
